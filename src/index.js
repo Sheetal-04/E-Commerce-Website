@@ -27,8 +27,8 @@ function App() {
 	return <RouterProvider router={router} />;
 }
 ReactDOM.createRoot(document.getElementById("root")).render(
-		<Provider store={Store}>
-			<App />
-			<Toaster />
-		</Provider>
+	<Provider store={Store}>
+		<App />
+		<Toaster />
+	</Provider>
 );
