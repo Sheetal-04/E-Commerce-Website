@@ -15,9 +15,13 @@ const Home = () => {
 		<>
 			<div>
 				<div className="w-11/12 flex flex-wrap justify-center mx-auto gap-10">
-					{Products.map((product, index) => (
-						<Product key={index} {...product} />
-					))}
+					{Products.length > 0 ? (
+						Products.map((product, index) => (
+							<Product key={index} {...product} />
+						))
+					) : (
+						<p>SORRY ! NO PRODUCTS AVAILABLE</p>
+					)}
 				</div>
 			</div>
 		</>
